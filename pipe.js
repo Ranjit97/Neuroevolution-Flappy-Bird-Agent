@@ -28,7 +28,7 @@ class Pipe {
     if(this.highlight) {
       fill(255,0,0);
     }
-    image(pipe_png, this.x, 0 , this.w, this.top);
+    image(invert_pipe, this.x, 0 , this.w, this.top);
     image(pipe_png, this.x, height - this.bottom , this.w, this.bottom);
   };
   
