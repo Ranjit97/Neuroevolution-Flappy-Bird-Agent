@@ -4,6 +4,7 @@ let slider;
 var cnv;
 let bird_png;
 let pipe_png;
+let invert_pipe;
 let bg;
 
 let brainJSON;
@@ -18,8 +19,9 @@ function setup() {
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
   bird_png = loadImage('bird.png');
-  pipe_png = loadImage('pipe.png');
-  bg = loadImage('background_png.png');
+  pipe_png = loadImage('pipe.jpeg');
+  invert_pipe = loadImage('invert_pipe.jpeg');
+  bg = loadImage('back.jpeg');
   input = createP('Slider to speed up');
   input.position((windowWidth / 2) - 250,(windowHeight/2) + 210 );
   //speedup = createElement('h2', 'Slider to spped up the training');
